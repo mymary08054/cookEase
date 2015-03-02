@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/delete_rcp_title"
+        android:textSize="20dp" />
+
+    <EditText
+        android:id="@+id/del_user_recipe_search"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:hint="@string/rm_rcps"
+        android:inputType="textCapSentences" />
+
+    <Button
+        android:id="@+id/del_choosetags_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/cookbook_choosetags_button" />
+
+    <Button
+        android:id="@+id/del_findrecipes_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/cookbook_findrecipes_button" />
+
+    <Button
+        android:id="@+id/del_cancel_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/cancel_button" />
+
+</LinearLayout>

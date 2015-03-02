@@ -1,0 +1,21 @@
+So here's how it's structured
+
+There're two databases, one for ingredients and one for recipes.
+
+Wanna know what's in your pantry? All the ingredients that are true for ingredient.getHave().
+Wanna know what's in your shopping list? All the ingredients that are true for ingredient.getNeed().
+
+Database methods are getAllIngredients() which returns an arraylist of ingredients. Same for getAllRecipes().
+Also insertIngredient takes an ingredient and adds it to the database (what a surprise). Same for insertRecipe.
+deleteIngredient and deleteRecipe do comparisons on the name field of the ingredients and recipes so try to only pass it objects that exhist in the getAll arraylists.
+
+It's possible to build recipes and ingredients with the bare minimum of necessary components but I haven't done much (any) testing on that case.
+There're constructors for the full recipes and ingredients and it's really best to use those.
+
+Updates to ingredients and recipes can only be done through deleting the object from the database, making the changes, and then reinserting it.
+For recipes there's very little that you can actually change in the object (I think there's a reason for this but I can't remember), so your best bet is to copy out the private members of the recipe and make a new one. Delete it from the database and reinsert it.
+
+Another note: Deleting from the arraylist doesn't delete from the database and vice-versa. There's no automatic syncing or anything.
+So if you need to permanently delete something make sure you delete it from the database first and then either from the arraylist or recall the getAll function.
+
+There're some stupid design choices in early ingredient code and a little in recipe but I can't exactly recall what I originally had in mind so if you guys see a really stupid and easy fix, just let me know.

@@ -1,0 +1,12 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item
+        android:id="@+id/action_add_food"
+        android:orderInCategory="200"
+        android:showAsAction="never"
+        android:title="@string/add_food"/>
+    <item
+        android:id="@+id/action_help_pantry"
+        android:orderInCategory="300"
+        android:showAsAction="never"
+        android:title="@string/help"/>
+</menu>

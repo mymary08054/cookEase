@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="tags_array">
+        <item>Breakfast</item><item>Lunch</item><item>Dinner</item><item>Dessert</item><item>Vegetarian</item>
+        <item>Vegan</item><item>Kosher</item>
+        <item>Dairy-Free</item>
+        
+        
+        
+        
+        <item >Gluten-Free</item>
+        
+    </string-array>
+    
+    <string-array name="pic_choose_array">
+        <item>Choose from Gallery</item>
+        <item>Take a Picture</item>
+    </string-array>
+    
+</resources>
